@@ -1,5 +1,11 @@
 
 
+<?php
+    //allow the config
+    define('__CONFIG__', true);
+    //require the config
+    require_once "inc/config.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,37 +22,19 @@
 
     <div class="uk section uk-container">
     
-    <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
-    
-    <form>
-    <fieldset class="uk-fieldset js-login">
+        <?php echo "Hello World! ";
+        echo "Today is " . date("Y m d");
+        ?>
 
-        <legend class="uk-legend">Login</legend>
-
-        <div class="uk-margin">
-            <input class="uk-input" type="email" required="required" placeholder="E-Mail">
-        </div>
-
-        <div class="uk-margin">
-            <input class="uk-input" type="password" required="required" placeholder="Password">
-        </div>
-
-        <div class="uk-margin">
-            <button class="uk-button uk-button-default" type="submit">LOGIN</button>
-        </div>
-
-
-    </fieldset>
-</form></div>
+        <p>
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
+        </p>
     </div>
 
-    <!-- jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>
+    <?php require_once "inc/footer.php" ?>
 
-
+    
     
 </body>
 </html>
