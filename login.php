@@ -24,8 +24,8 @@
     
     <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
     
-    <form>
-    <fieldset class="uk-fieldset js-login">
+    <form class="js-login">
+    <fieldset class="uk-fieldset">
 
         <legend class="uk-legend">Login</legend>
 

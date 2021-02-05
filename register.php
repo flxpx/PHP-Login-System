@@ -24,8 +24,8 @@
     
     <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
     
-    <form>
-    <fieldset class="uk-fieldset js-register">
+    <form class="js-register">
+    <fieldset class="uk-fieldset">
 
         <legend class="uk-legend">Register</legend>
 
@@ -35,6 +35,10 @@
 
         <div class="uk-margin">
             <input class="uk-input" type="password" required="required" placeholder="Password">
+        </div>
+
+        <div class="uk-margin uk-alert uk-alert-danger js-error" style="display: none;">
+        error
         </div>
 
         <div class="uk-margin">
